@@ -12,52 +12,116 @@
         <h1>Student card FORM</h1>
     </header>
     <main>
-        <form action="#" method="post"></form>
-    </main>
+        <form action="#" method="post" enctype="multipart/form-data">
+        
+    
     <section>
         <h2>Personal Information</h2>
         <fieldset>
             <legend>Provide your details</legend>
             <p>
                 <label for="full-name">Full Name:</label>
-                <input type="text" id="full-name" name="full-name" required>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
             </p>
             <p>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
             </p>
             <p>
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
             </p>
             <p>
                 <label for="age">Age:</label>
-                <input type="number" id="age" name="age" min="0" required>
+                <input type="number" id="age" name="age" min="0" placeholder="Enter your age" required>
             </p>
             <p>
                 <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dob" required>
+                <input type="date" id="dob" name="dob" placeholder="Enter your date of birth" required>
             </p>
             <p>
-                
-                <label for="gender">Gender:</label>
-                <input type="radio" id="male" name="gender" value="male" required>
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female" required>
-                <label for="female">Female</label>
-                <input type="radio" id="other" name="gender" value="other" required>
-                <label for="other">Other</label>
-                
+                Gender:<br>
+                <label><input type="checkbox" name="gender" value="male">Male </label><br>
+                <label><input type="checkbox" name="gender" value="female">Female</label><br>
+                <label><input type="checkbox" name="gender" value="other">Other</label><br>
+
+
+
             </p>
             <p>
-                <label for="languages KnownS">Address:</label>
-               
+                Languages Known:<br>
+                <label><input type="checkbox" name="languages KnownS" value="English">English</label><br>
+                <label><input type="checkbox" name="languages KnownS" value="Spanish">Spanish</label><br>
+                <label><input type="checkbox" name="languages KnownS" value="French">French</label><br>
 
 
+
+            </p>
+            <p>
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="USA">USA</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="UK">UK</option>
+                    <option value="Australia">Australia</option>
+                </select>
+            </p>
 
         </fieldset>
     </section>
+    <section>
+        <h2> College Subjects </h2>
+        <fieldset>
+            <legend>Select your subjects:</legend>
+            <p>
+                <label for="subjects">Choose your subjects:</label><br>
+                <select id="subjects" name="subjects" multiple size="5" required>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Biology">Biology</option>
+                    <option value="Computer Science">Computer Science</option>
+                </select>
 
+            </p>
+            <p>
+                <label for="interest">Rate your interest in Computer Science:</label><br>
+                <input type="range" id="interest" name="interest" min="0" max="100">
+            </p>
+        </fieldset>
+    </section>
+    <section>
+        <h2>Skills Assessment</h2>
+        <fieldset >
+            <legend>Assess your skills:</legend>
+            <p>
+                <label for="skills">Describe your skills:</label><br>
+                <textarea id="skills" name="skills" rows="4" cols="50" placeholder="List your skills here..."></textarea>
+            </p>
+            <p>
+                <label for="resume">Upload your resume:</label><br>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </p>
+            <p>
+                <label for="color">Pick your favorite color:</label><br>
+                <input type="color" id="color" name="color" value="#000000">
+            </p>
+            <p>
+                <label for="Preferred study time">Preferred study time:</label><br>
+                <input type="time" id="Preferred study time" name="Preferred study time">
+            </p>
+            <p>
+                <button type="submit">Submit Survey</button>
+            </p>
+        </fieldset>
+    </section>
+    
+</form>
+</main>
+<footer>
+    <p> &copy;  Student card by Schelkonohova. All rights reserved. </p>
+</footer>
 </body>
 
 </html>

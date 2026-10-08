@@ -150,3 +150,12 @@ footer a {
     color: #fff;
     text-decoration: underline; /* Consider removing underline if using buttons for CTA */
 }
+img {
+    max-width: 500px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 15px 0;
+    border-radius: 6px;
+}

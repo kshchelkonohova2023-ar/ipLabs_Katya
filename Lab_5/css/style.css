@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    
+    unicode-bidi: isolate;
+}
+#logos_container {
+        padding: 1rem 0;
+        display: block;
+        box-sizing: border-box;
+    }
+.fontyourface {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+}

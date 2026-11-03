@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #2D2D2D;
+    background-color: #FFFFFF;
+}
+
+/* Шапка сайту */
+.header {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 24px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 130px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #2D2D2D;
+    font-size: 14px;
+}
+
+.nav .login {
+    background-color: #4389E8;
+    color: white;
+    padding: 16px 40px;
+    border-radius: 10px;
+}
+
+.hero {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 70px 100px 70px;
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    align-items: start;
+    gap: 40px;
+    background-color: #F7F5FD;
+}
+
+
+.hero-content {
+    max-width: 466px;
+}
+
+.hero-content h1 {
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 90px;
+    color: #2D2D2D;
+    margin-bottom: 24px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #2D2D2D;
+    opacity: 0.5;
+    margin-bottom: 40px;
+}
+
+/* Кнопка */
+.hero-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 203px;
+    height: 64px;
+    background-color: #F8D57E;
+    border-radius: 10px;
+    color: #2D2D2D;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    text-decoration: none;
+}
+
+
+.hero-image img {
+    width: 500px;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.video-section {
+   max-width: 1280px;
+    margin: 0 auto;
+    padding: 70px 0 ;
+    background-color: #F2FAF8;
+}
+
+.video-preview {
+    position: relative;
+    width: 765px;
+    height: 460px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.video-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    background-color: #F8D57E;
+    color: #2D2D2D;
+    font-size: 30px;
+    cursor: pointer;
+}
+.brand-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 80px 172px;
+    background-color: #ffffff;
+}
+.brand-logos img {
+    width: auto;
+    height: 28px;
+    object-fit: contain;
+}
+.features-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 116px 90px;
+  background-color: #FFFFFF;
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.feature-card {
+ width: 230px;
+ height: 268px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Фіксуємо блок для іконки рівно 85x85px згідно з Figma */
+.feature-icon {
+  width: 85px;
+  height: 85px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Змушуємо саму картинку суворо вписатися в ці 85x85px */
+.feature-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2D2D2D;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #707070;
+  max-width: 200px ;
+  margin: 0 auto;
+}

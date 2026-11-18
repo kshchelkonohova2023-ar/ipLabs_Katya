@@ -9,7 +9,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-/* Анімація плавної появи карток */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -21,9 +21,7 @@ body {
     }
 }
 
-/* =========================================================
-   1. HEADER (ВАРІАНТ 3: header#featured_container) — FLEXBOX
-   ========================================================= */
+
 header#featured_container {
     width: 100%;
     padding: 35px 0 45px;
@@ -36,7 +34,7 @@ header#featured_container .container {
     padding: 0 15px;
 }
 
-/* Flexbox-контейнер для рядків у header */
+
 header#featured_container .views-view-grid .row {
     display: flex;
     flex-direction: row;
@@ -51,7 +49,7 @@ header#featured_container .views-view-grid .row:last-child {
     margin-bottom: 0;
 }
 
-/* Flexbox-елемент (2 колонки на десктопі та планшеті) */
+
 header#featured_container .views-col {
     flex: 1 1 calc(50% - 15px);
     max-width: calc(50% - 15px);
@@ -108,9 +106,7 @@ header#featured_container .views-col a:hover h2 span {
     text-underline-offset: 3px;
 }
 
-/* =========================================================
-   2. MAIN (div.main-container) — CSS GRID LAYOUT
-   ========================================================= */
+
 main .main-container {
     max-width: 1170px;
     margin: 0 auto;
@@ -138,7 +134,7 @@ main .main-container .view-header h2 a:hover {
     color: #005580;
 }
 
-/* Grid-сітка: 4 колонки на Desktop (1024px і більше) */
+
 main .main-container .views-view-grid .row {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -213,11 +209,9 @@ main .main-container .views-col a:hover h3 {
     text-decoration: underline;
 }
 
-/* =========================================================
-   3. МЕДІА-ЗАПИТИ (ПУНКТ 3.7)
-   ========================================================= */
 
-/* Tablet (планшети): 768px – 1023px — 2 колонки */
+
+
 @media (min-width: 768px) and (max-width: 1023px) {
     header#featured_container .views-col {
         flex: 1 1 calc(50% - 15px);
@@ -231,7 +225,7 @@ main .main-container .views-col a:hover h3 {
     }
 }
 
-/* Mobile (мобільні пристрої): до 767px — 1 колонка */
+
 @media (max-width: 767px) {
     header#featured_container .views-view-grid .row {
         flex-direction: column;
